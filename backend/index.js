@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 
 const corsOptions = {
-  origin : process.env.APPLICATION_URL,
+  origin : [process.env.APPLICATION_URL,'https://vb-dace-clint.vercel.app'],
   methods : ['GET','POST','PUT','DELETE']
 } 
 app.use(express.json());
