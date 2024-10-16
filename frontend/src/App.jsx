@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Hero from './components/hero'
+import Hero from './components/Hero'
 
 import {createBrowserRouter,Outlet,RouterProvider} from "react-router-dom"
 import Layout from './components/Layout.jsx'
@@ -8,8 +8,8 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import Our from './pages/Our.jsx'
-import Shipping from './pages/shipping.jsx'
-import Kitchen from './pages/KItchen.jsx'
+import Shipping from './pages/Shipping.jsx'
+import Kitchen from './pages/Kitchen.jsx'
 import Accessories from './pages/Accessories.jsx'
 
 import Addproduct from '../src/admin/Addproduct.jsx'
@@ -18,7 +18,7 @@ import Tableware from './pages/Tableware.jsx'
 
 import Kitchentools from './pages/Kitchentools.jsx'
 import Kitchenmate from './pages/Kitchenmate.jsx'
-import Productid from './pages/productid.jsx'
+import Productid from './pages/Productid.jsx'
 import Cart from './pages/Cart.jsx'
 
 
