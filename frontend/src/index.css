@@ -2,9 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200..900&display=swap');
+
+* {
+   font-family: 'Source Sans Pro', sans-serif;
+}
+
+
 .hover-underline-custom:hover {
   text-decoration: underline;
   text-decoration-color: #BA906A; /* Set the underline color */
   text-decoration-thickness: 2px;
  
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+

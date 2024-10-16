@@ -48,11 +48,11 @@ function Header() {
         <VscHeart className='text-xl'/>
         <p >My Orders</p>
         </button>
-        <button className="flex items-center gap-1">
+        <Link to='/cart' className="flex items-center gap-1">
         <IoCartOutline className='text-xl' />
         <p>Cart</p>
 
-        </button>
+        </Link>
       </div>
       {/* hover:border-b-[3px] pb-1 border-[#BA906A] */}
       </div>
@@ -70,12 +70,12 @@ function Header() {
             {isProductsOpen && (
               <div className="absolute left-0 top-full rounded-md w-40 bg-white border border-gray-200 shadow-lg">
                 <ul className="text-black text-base">
-                  <li className="px-5 py-2 hover:bg-gray-200" onMouseEnter={()=> setisKitchenOpen(true)} onMouseLeave={()=>setisKitchenOpen(false)}><Link to="/" className='flex items-center justify-between'>Kitchenware <span className='text-[18px] mt-1'><MdArrowRight /></span></Link>{iskitchenOpen && (
-                    <div className='absolute left-full top-0 w-40 bg-white rounded-md border border-gray-200 shadow-lg'><ul className='text-black text-base'><li className='px-5 py-2 hover:bg-gray-200'><Link to="/">Accessories</Link></li></ul></div>
+                  <li className="px-5 py-2 hover:bg-gray-200" onMouseEnter={()=> setisKitchenOpen(true)} onMouseLeave={()=>setisKitchenOpen(false)}><Link to="/kitchenware" className='flex items-center justify-between'>Kitchenware <span className='text-[18px] mt-1'><MdArrowRight /></span></Link>{iskitchenOpen && (
+                    <div className='absolute left-full top-0 w-40 bg-white rounded-md border border-gray-200 shadow-lg'><ul className='text-black text-base'><li className='px-5 py-2 hover:bg-gray-200'><Link to="/accessories">Accessories</Link></li></ul></div>
                   )}</li>
-                  <li className="px-5 py-2 hover:bg-gray-200"><Link to="/">Tableware </Link></li>
-                  <li className="px-5 py-2 hover:bg-gray-200"><Link to="/">Kitchen Tools</Link></li>
-                  <li className="px-5 py-2 hover:bg-gray-200"><Link to="/">Kitchen Mates</Link></li>
+                  <li className="px-5 py-2 hover:bg-gray-200"><Link to="/tableware">Tableware </Link></li>
+                  <li className="px-5 py-2 hover:bg-gray-200"><Link to="/kitchentools">Kitchen Tools</Link></li>
+                  <li className="px-5 py-2 hover:bg-gray-200"><Link to="/kitchenmate">Kitchen Mates</Link></li>
                 </ul>
               </div>
             )}

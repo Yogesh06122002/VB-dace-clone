@@ -13,3 +13,8 @@ router.put('/update/:id',updateProduct);
 
 
 export default router;
+
+
+
+
+

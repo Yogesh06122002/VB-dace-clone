@@ -24,7 +24,7 @@ export const createProduct = async (req,res,next) => {
       if(product){
         // res.send("product created successfully");
         res.send(product);
-        console.log(product);
+        // console.log(product);
       }else {
         console.error("Something went wrong while creating the product.");
         res.status(500).send("Failed to create product");
@@ -75,8 +75,8 @@ export const createProduct = async (req,res,next) => {
     const product = await getOne(id);
 
     if(product){
-      res.send("product get successfully");
-      console.log(product);
+      res.send(product);
+      // console.log(product);
     }else{
       res.status(404).send("unable to get data");
     }
@@ -90,11 +90,14 @@ export const createProduct = async (req,res,next) => {
 
      if(product){
       res.send("update the product successfully");
-      console.log(product);
+      // console.log(product);
      }else{
       res.status(404).send("Unable to update");
      }
   }
+
+
+  
 
 
     

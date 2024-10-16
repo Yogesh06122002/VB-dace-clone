@@ -39,7 +39,7 @@ function Addproduct() {
   
     const productData = new FormData();
   
-    console.log(formData)
+    // console.log(formData)
 
     productData.append('productName',formData.productName);
     productData.append('price',formData.price);
@@ -97,7 +97,7 @@ function Addproduct() {
             <div className="flex gap-2">
               <label htmlFor="category">category:</label>
               <select className=' border-b-2 outline-none ' name='category' value={formData.category} onChange={handleChange}>
-              <option value="">Select a category</option>
+              <option value="" className=''>Select a category</option>
               <option value="kitchenware">kitchenware</option>
               <option value="accessories">accessories</option>
               <option value="tableware">tableware</option>
