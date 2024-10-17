@@ -22,6 +22,8 @@ function Productid() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+
+    window.scrollTo(0, 0);
    axios.get(`http://localhost:5005/api/products/get/${productid}`).
    then((response) => {
     // console.log(response.data);
@@ -63,8 +65,8 @@ function Productid() {
       {showSuccess && <div className='relative'>
         <div className='absolute right-0 top-[-60px] z-auto border border-green-500 text-xl text-green-700 p-2'> Add to cart successfully ! </div></div>}
       <div className='flex gap-x-5 mb-20'>
-        <div className='border border-gray-300 h-[600px] w-[850px]'>
-          <img src={product.images[0]} alt="" className='h-full w-full'/>
+        <div className='border border-gray-300 h-[600px] w-[850px] flex justify-center'>
+          <img src={product.images[0]} alt="" className='h-full w-[600px]'/>
         </div>
         <div className='w-[375px]'>
           <h1 className='text-[24px] font-medium '>{product.productName}</h1>

@@ -17,7 +17,7 @@ function Prodcts() {
   
   useEffect(() => {
     axios.get("http://localhost:5005/api/products/get").then((response) => {
-    // console.log(response.data);
+    console.log(response.data);
       setAllProducts(response.data);
       // console.log(allProducts);
 

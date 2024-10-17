@@ -20,6 +20,8 @@ import Kitchentools from './pages/Kitchentools.jsx'
 import Kitchenmate from './pages/Kitchenmate.jsx'
 import Productid from './pages/Productid.jsx'
 import Cart from './pages/Cart.jsx'
+import Orders from './pages/Orders.jsx'
+import Login from './pages/Login.jsx'
 
 
 const router = createBrowserRouter([
@@ -79,6 +81,10 @@ const router = createBrowserRouter([
       {
         path:"/cart",
         element:<Cart/>
+      },
+      {
+        path:"/myorders",
+        element:<Orders/>
       }
     ]
    
@@ -97,6 +103,10 @@ const router = createBrowserRouter([
         element:<div>hi</div>
       }
     ]
+  },
+  {
+    path:"/login",
+    element:<Login/>
   }
 ])
 
