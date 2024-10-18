@@ -5,7 +5,7 @@ function Shipping() {
     <div>
       <div>
         <p className='text-center text-[28px] mt-10 font-medium'>Shipping and Delivery</p>
-        <div className="mx-24">
+        <div className="mx-6 lg:mx-24">
           <p className='font-semibold mt-10'>At VB DACE, we make our best effort to ensure that each item in your order is shipped out within 3 working days of the order date. During the launch, all our pre-orders will be shipping on Dec 1st. </p>
           <p className='mt-3'>Orders are processed from Monday to Saturday. Orders placed on Sunday will be processed the next day. In some cases, it may take up to 5 working days during festivals, sales or when there are other mitigating circumstances. To ensure that your order reaches you swiftly and safely, VB DACE uses only reputable courier partners.</p>
           <br />

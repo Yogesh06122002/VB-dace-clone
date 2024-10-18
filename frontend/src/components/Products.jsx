@@ -53,13 +53,13 @@ function Products() {
     trendingRef.current.scrollBy({ left: -productWidth, behavior: 'smooth' });
   };
   return (
-    <div className='mx-16'>
-      <div className='text-center text-2xl'>Shop by Products</div>
+    <div className='lg:mx-16 mx-3'>
+      <div className='text-center text-[23px] lg:text-2xl'>Shop by Products</div>
       <div className='  '>
-        <p className='font-medium px-0 text-center mt-10 border-b-black w-[8%] text-lg border-b-2 '>Best Sellers</p>
+        <p className='font-medium  mt-10 lg:border-b-black border-b-[#BB906A] w-[25%] lg:w-[8%] lg:text-lg text-base border-b-2 text-[#BB906A] lg:text-black'>Best Sellers</p>
         
 
-        <div ref={scrollContainerRef} className=" flex  pt-7 gap-[17px] pb-16 overflow-x-auto scrollbar-hide  border-t-[1px] border-t-gray-200 w-full mt-[-2]  ">
+        <div ref={scrollContainerRef} className=" flex  pt-7 gap-3 lg:gap-[17px] pb-16 overflow-x-auto scrollbar-hide  border-t-[1px] border-t-gray-200 w-full mt-[-2]  ">
 
           {allProducts && allProducts.map(product => (
             <Link to ={`/product/${product._id}`} key={product._id}>
@@ -92,10 +92,10 @@ function Products() {
 
         
       <div className='  '>
-        <p className='font-medium px-0 text-center mt-16 border-b-black w-[9%] text-lg border-b-2 '>New Arrivals</p>
+        <p className='font-medium  mt-10 lg:border-b-black border-b-[#BB906A] w-[25%] lg:w-[8%] lg:text-lg text-base border-b-2 text-[#BB906A] lg:text-black'>New Arrivals</p>
         
 
-        <div ref={newArrivalsRef} className=" flex  pt-7 gap-[17px] pb-16 overflow-x-auto scrollbar-hide  border-t-[1px] border-t-gray-200 w-full mt-[-2]  ">
+        <div ref={newArrivalsRef} className=" flex  pt-7 gap-3 lg:gap-[17px] pb-16 overflow-x-auto scrollbar-hide  border-t-[1px] border-t-gray-200 w-full mt-[-2]  ">
 
           {allProducts && allProducts.slice().reverse().map(product => (
             <Link to={`/product/${product._id}`}>
@@ -129,10 +129,10 @@ function Products() {
 
         
       <div className='  '>
-        <p className='font-medium px-0 text-center mt-16 border-b-black w-[11%] text-lg border-b-2 '>What's Trending</p>
+        <p className='font-medium  mt-10 lg:border-b-black border-b-[#BB906A] w-[32%] lg:w-[8%] lg:text-lg text-base border-b-2 text-[#BB906A] lg:text-black '>What's Trending</p>
         
 
-        <div ref={ trendingRef} className=" flex  pt-7 gap-[17px] pb-16 overflow-x-auto scrollbar-hide  border-t-[1px] border-t-gray-200 w-full mt-[-2]  ">
+        <div ref={ trendingRef} className=" flex   pt-7 gap-3 lg:gap-[17px] pb-16 overflow-x-auto scrollbar-hide  border-t-[1px] border-t-gray-200 w-full mt-[-2]  ">
 
           {  kitchenWare.map(product => (
             <Link to={`/product/${product._id}`}>

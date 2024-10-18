@@ -4,13 +4,13 @@ function Our() {
   return (
     <div>
       <div>
-        <p className='text-center text-[28px] mt-10 font-medium'>Our Experience Centers</p>
+        <p className='text-center text-2xl lg:text-[28px] mt-5 lg:mt-10 font-semibold lg:font-medium'>Our Experience Centers</p>
       </div>
-      <div className='mx-20'>
-        <p className='text-3xl'>Chennai</p>
-        <div className="flex pt-4 pb-16">
-          <div className='w-[24%]'>
-            <p className='font-semibold text-[22px]'>1. Perungudi</p>
+      <div className='mx-4 lg:mx-20'>
+        <p className=' text-2xl mt-4 lg:mt-0 lg:text-3xl'>Chennai</p>
+        <div className="lg:flex pt-4 pb-16">
+          <div className='lg:w-[24%] w-[80%]'>
+            <p className='font-semibold text-xl lg:text-[22px]'>1. Perungudi</p>
             <p className='text-base font-normal mt-2'>VB DACE Appliances Pvt. Ltd.,<br />
               3'rd Floor, Falcon Heights,Plot No. 30,
               Industrial Estate Main Road,Perungudi,
@@ -25,8 +25,8 @@ function Our() {
               Store Locator: <span className='text-blue-700'>https://g.co/kgs/U693bbx</span></p>
 
           </div>
-          <div className='w-[30%] ml-32'>
-          <p className='font-semibold text-[22px]'>2. Alwarpet</p>
+          <div className='lg:w-[30%] lg:ml-32 mt-4 lg:mt-0'>
+          <p className='font-semibold text-xl lg:text-[22px]'>2. Alwarpet</p>
           <p className='text-base font-normal mt-2'>
           VB DACE Appliances Pvt. Ltd.,<br />
           7/8, 1st St, Seethammal Colony,<br />

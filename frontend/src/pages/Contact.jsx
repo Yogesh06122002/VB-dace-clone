@@ -3,8 +3,8 @@ import React from 'react'
 function Contact() {
   return (
     <div>
-      <div className='mt-10 text-center text-[28px] font-semibold'>Contact Us</div>
-      <div className="mx-20">
+      <div className='lg:mt-10 mt-3 text-center text-[28px] font-semibold'>Contact Us</div>
+      <div className="mx-4 lg:mx-20">
         <p className='mt-10'>We’d love to hear from you! For inquiries, feedback, or support, please reach out to us:</p>
         <br />
         <p className='font-semibold'>Email: <span className='text-blue-700 font-normal'><a href="mailto:support@vbdace.com"> support@vbdace.com</a></span></p>

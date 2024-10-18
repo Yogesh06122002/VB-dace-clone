@@ -23,15 +23,15 @@ function Accessories() {
   return (
     <div>
         <div className='bg-[#F3EDDF]'>
-        <div className='mx-16 text-base font-normal pt-16'>
+        <div className='mx-4 lg:mx-16 text-base font-normal pt-16'>
           <div><Link to='/' className='mr-3 hover:underline'>Home</Link>     /   <Link to ='/products' className='mx-3 hover:underline'>All Products</Link>   / <span className='mx-3'>Accessories</span></div>
           <div className='mt-3 pb-20'>
-            <h1 className=' text-4xl'>Accessories</h1>
-            <p className='mt-4'>Shop Accessories exclusively designed by Venkatesh <br />Bhat.</p>
+            <h1 className=' text-3xl lg:text-4xl'>Accessories</h1>
+            <p className='mt-4 hidden lg:block'>Shop Accessories exclusively designed by Venkatesh <br />Bhat.</p>
           </div>
         </div>
         </div>
-        <div className='mt-10 mx-16 '>
+        <div className='mt-10 lg:mx-16 mx-4 '>
           <div className='relative'>
             <button className='w-36 font-medium    flex justify-between items-center' onClick={() => setDropDown(!dropDown)}onMouseLeave={()=> setDropDown(false)}><p>SORT BY</p><MdOutlineKeyboardArrowDown className='text-xl'/>
             {dropDown && (

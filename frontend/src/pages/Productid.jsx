@@ -61,15 +61,15 @@ function Productid() {
     }
   
   return (
-    <div className='pt-16 mx-12'>
+    <div className='pt-8 lg:pt-16 lg:mx-12 mx-4'>
       {showSuccess && <div className='relative'>
         <div className='absolute right-0 top-[-60px] z-auto border border-green-500 text-xl text-green-700 p-2'> Add to cart successfully ! </div></div>}
-      <div className='flex gap-x-5 mb-20'>
-        <div className='border border-gray-300 h-[600px] w-[850px] flex justify-center'>
-          <img src={product.images[0]} alt="" className='h-full w-[600px]'/>
+      <div className='lg:flex gap-x-5 mb-20'>
+        <div className='border border-gray-300 lg:h-[600px] lg:w-[850px] flex justify-center'>
+          <img src={product.images[0]} alt="" className='h-full w-[600px] p-1 lg:p-0'/>
         </div>
-        <div className='w-[375px]'>
-          <h1 className='text-[24px] font-medium '>{product.productName}</h1>
+        <div className='lg:w-[375px] mt-10 lg:mt-0'>
+          <h1 className='lg:text-[24px] text-2xl font-semibold lg:font-medium '>{product.productName}</h1>
           <p className='mt-6'>{product.disc}</p>
           <div className='flex gap-14 mt-7'>
             <div><img src={gas} alt="" className='h-16 w-16 hover:scale-125' />
@@ -97,7 +97,7 @@ function Productid() {
 
           <div className=' font-semibold text-[20px] mt-4 mx-3'>&#8377; {product.price}</div>
           <div className="flex gap-3 mt-4 mb-10">
-            <button className=' text-white bg-[#D19E6F] px-10 text-xl shadow-xl py-2'>Buy Now</button>
+            <button className=' text-white bg-[#D19E6F] px-10 text-xl shadow-2xl py-2'>Buy Now</button>
             <button  className=' text-[#B28566] px-6 border border-[#B28566] text-xl  py-2' onClick={show}>Add to Cart</button>
 
           </div>
