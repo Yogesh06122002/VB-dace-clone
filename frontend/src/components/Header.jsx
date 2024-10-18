@@ -74,28 +74,28 @@ function Header() {
 
       </div>
         {active && (
-        <div className='absolute lg:hidden  bg-white text-black   left-0 right-0  z-50   top-24 pt-5   '>
-          <div className='flex flex-col gap-2 pb-5  border-b mx-8 border-gray-200'>
+        <div className='absolute lg:hidden  bg-white text-black   left-0 right-0  z-50   top-24 pt-5   '  >
+          <div className='flex flex-col gap-2 pb-5  border-b mx-8 border-gray-200 'onClick={()=>setActive(!active)}>
           <Link to='/myorders'>My Orders</Link>
           <Link to='/cart'><p>My cart</p></Link>
           <Link to='/login'>Sign In</Link>
           </div>
           <div className='mx-8 mt-3'>
             <p className='text-[17px] font-medium'>Shop By Categories</p>
-            <div className="flex flex-col mt-2 gap-2 ml-5">
+            <div className="flex flex-col mt-2 gap-2 ml-5" onClick={()=>setActive(!active)} >
               <Link to='/kitchenware' className='flex gap-1 items-center'><IoIosArrowForward onClick={() => {setAccess(!access)}} /> <p>Kitchenware </p>
               </Link>
               {
                 access && (
-                  <Link to='/accessories' className='ml-5 flex items-center'> <IoIosArrowForward /> Accessories</Link>
+                  <Link to='/accessories' className='ml-5 flex items-center' onClick={()=>setActive(!active)}> <IoIosArrowForward /> Accessories</Link>
                 )
               }
-              <Link to='tableware'className='flex gap-1 items-center'><IoIosArrowForward /> Tableware</Link>
-              <Link to='kitchentools'className='flex gap-1 items-center'><IoIosArrowForward /> Kitchen Tools</Link>
-              <Link to='kitchenmate'className='flex gap-1 items-center'><IoIosArrowForward /> Kitchen Mate</Link>
+              <Link to='tableware'className='flex gap-1 items-center' onClick={()=>setActive(!active)}><IoIosArrowForward /> Tableware</Link>
+              <Link to='kitchentools'className='flex gap-1 items-center' onClick={()=>setActive(!active)}><IoIosArrowForward /> Kitchen Tools</Link>
+              <Link to='kitchenmate'className='flex gap-1 items-center' onClick={()=>setActive(!active)}><IoIosArrowForward /> Kitchen Mate</Link>
               
             </div>
-            <div className="mt-6 pb-10">
+            <div className="mt-6 pb-10" onClick={()=>setActive(!active)}>
               <Link to='/products' className='text-[17px] font-medium'>All Products</Link>
               <div className="flex flex-col gap-2 mt-6 text-[17px] font-medium">
               <Link to='/about'>About VB Dace</Link>
