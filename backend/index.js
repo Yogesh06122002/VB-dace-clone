@@ -31,8 +31,10 @@ const corsOptions = {
   methods : ['GET','POST','PUT','DELETE'],
   credentials: true
 } 
-app.use(express.json());
 app.use(cors(corsOptions));
+app.options('*', cors(corsOptions)); // This will allow preflight requests for all routes
+app.use(express.json());
+
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
