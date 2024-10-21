@@ -60,7 +60,7 @@ function Addproduct() {
     
     try{
       
-      axios.post('http://localhost:5005/api/products/create',productData);
+      axios.post('https:vb-dace-server.vercel.app/api/products/create',productData);
       console.log('product created successfully');
       setFormData({
         productName:'',
