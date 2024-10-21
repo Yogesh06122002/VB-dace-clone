@@ -8,9 +8,9 @@ export const createProduct = async (req,res,next) => {
 
     const images = req.files;
 
-    if(!images || images.length === 0){
-     return res.status(400).send("no files uploaded")
-    }
+    if (!data.productName || !data.price || !data.category || !data.disc || !images || images.length === 0) {
+      return res.status(400).send("Missing required fields or no files uploaded");
+  }
 
     const productData = {
       ...data,
@@ -20,6 +20,8 @@ export const createProduct = async (req,res,next) => {
     try{
 
       const product = await add(productData);
+
+     
   
       if(product){
         // res.send("product created successfully");
