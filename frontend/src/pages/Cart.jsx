@@ -49,7 +49,11 @@ function Cart() {
                 <div  className='w-full hidden lg:flex py-4'>
                   <div className='w-[25%] flex  gap-3 justify-evenly items-center'>
                     <div className=''>
+
                       <img src={item.product.images[0]} alt=""  className='w-28 h-20'/>
+
+                      <img src={item.product.images[0]} alt=""  className='w-20 h-20'/>
+
 
                     </div>
                     <div>

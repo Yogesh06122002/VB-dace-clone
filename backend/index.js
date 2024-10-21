@@ -3,7 +3,9 @@ import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 // import connectDB from './config/db.js';
 import productRoutes from './routes/productRoutes.js'
+
 import userRoutes from './routes/userRoutes.js'
+
 import cors from 'cors';
 import path from 'path';
 import { dirname } from 'path';
@@ -24,11 +26,10 @@ mongoose.connect(process.env.MONGO_URI)
 
 
 const corsOptions = {
+
   origin : [process.env.APPLICATION_URL,'https://vb-dace-clint.vercel.app',process.env.PORT],
   methods : ['GET','POST','PUT','DELETE'],
- 
   credentials: true
- 
 } 
 app.use(express.json());
 app.use(cors(corsOptions));
@@ -36,6 +37,7 @@ app.use(cors(corsOptions));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 app.use('/api/products',productRoutes);
+
 app.use('/api/user',userRoutes);
 
 

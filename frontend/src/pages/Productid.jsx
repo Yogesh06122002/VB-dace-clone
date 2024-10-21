@@ -63,7 +63,11 @@ function Productid() {
   return (
     <div className='pt-8 lg:pt-16 lg:mx-12 mx-4'>
       {showSuccess && <div className='relative'>
+
         <div className=' fixed right-8 top-8 z-10 border bg-green-700 text-xl text-white p-3 rounded-md'> Add to cart successfully ! </div></div>}
+
+        
+
       <div className='lg:flex gap-x-5 mb-20'>
         <div className='border border-gray-300 lg:h-[600px] lg:w-[850px] flex justify-center'>
           <img src={product.images[0]} alt="" className='h-full w-[600px] p-1 lg:p-0'/>
