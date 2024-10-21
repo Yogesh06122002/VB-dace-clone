@@ -14,7 +14,7 @@ export const createProduct = async (req,res,next) => {
 
     const productData = {
       ...data,
-      images: images.map(file =>  `http://localhost:5005/images/${file.filename}`)
+      images: images.map(file =>  `https://vb-dace-server.vercel.app//images/${file.filename}`)
     }
    
     try{
