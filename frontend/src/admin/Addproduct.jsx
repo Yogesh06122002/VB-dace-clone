@@ -59,8 +59,9 @@ function Addproduct() {
     // console.log(productData.get('images[1]'));
     
     try{
+
       
-      axios.post('https://vb-dace-server.vercel.app/api/products/create',productData);
+        await  axios.post('https://vb-dace-server.vercel.app/api/products/create',productData);
       console.log('product created successfully');
       setFormData({
         productName:'',
