@@ -32,7 +32,7 @@ const corsOptions = {
   credentials: true
 } 
 app.use(cors(corsOptions));
-app.options('*', cors(corsOptions)); // This will allow preflight requests for all routes
+// app.options('*', cors(corsOptions)); // This will allow preflight requests for all routes
 app.use(express.json());
 
 

@@ -1,19 +1,26 @@
+import { response } from 'express';
 import User from '../models/userSchema.js'
+import bcrypt from 'bcrypt' 
 
 export const register = async (data) => {
 
-  const existUser = await User.findOne({userEmail : data.email});
+  const existUser = await User.findOne({userEmail : data.userEmail});
 
   if(existUser){
-    res.send("Email already exist")
+    console.log("Email already exist");
   }else{
 
     const result = await User.create(data);
-    return result;
+    return result; 
   }
 }
 
 export const login = async (data) => {
-  const result = await User.findOne({userEmail: data.email});
-  return result;
+  const existUser = await User.findOne({userEmail : data.userEmail});
+  if(existUser){
+   return existUser;
+    
+  
+  }
+  return null;
 }

@@ -24,11 +24,12 @@ export const userRegister = async (req,res,next) => {
 
 export const userLogin = async (req,res,next) => {
   const data = req.body;
-  const user = await login(data);
+  // console.log(user);
   try{
+    const user = await login(data);
     if(user){
       res.send(user);
-      console.log("user login successfull")
+      // console.log("user login successfull")
     }else{
       console.log("user login failed")
     }

@@ -92,7 +92,7 @@ function Products() {
 
         
       <div className='  '>
-        <p className='font-medium  mt-10 lg:border-b-black border-b-[#BB906A] w-[25%] lg:w-[8%] lg:text-lg text-base border-b-2 text-[#BB906A] lg:text-black'>New Arrivals</p>
+        <p className='font-medium  mt-10 lg:border-b-black border-b-[#BB906A] w-[25%] lg:w-[9%] lg:text-lg text-base border-b-2 text-[#BB906A] lg:text-black'>New Arrivals</p>
         
 
         <div ref={newArrivalsRef} className=" flex  pt-7 gap-3 lg:gap-[17px] pb-16 overflow-x-auto scrollbar-hide  border-t-[1px] border-t-gray-200 w-full mt-[-2]  ">
@@ -129,7 +129,7 @@ function Products() {
 
         
       <div className='  '>
-        <p className='font-medium  mt-10 lg:border-b-black border-b-[#BB906A] w-[32%] lg:w-[8%] lg:text-lg text-base border-b-2 text-[#BB906A] lg:text-black '>What's Trending</p>
+        <p className='font-medium  mt-10 lg:border-b-black border-b-[#BB906A] w-[32%] lg:w-[11%] lg:text-lg text-base border-b-2 text-[#BB906A] lg:text-black '>What's Trending</p>
         
 
         <div ref={ trendingRef} className=" flex   pt-7 gap-3 lg:gap-[17px] pb-16 overflow-x-auto scrollbar-hide  border-t-[1px] border-t-gray-200 w-full mt-[-2]  ">

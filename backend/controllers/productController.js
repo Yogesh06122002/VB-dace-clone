@@ -31,12 +31,12 @@ export const createProduct = async (req,res,next) => {
         // console.log(product);
       }else {
         console.error("Something went wrong while creating the product.");
-        res.status(500).send("Failed to create product",productData);
+        res.status(500).send("Failed to create product");
     }
     }catch(err){
       console.error("Error while creating product:", err);
-        // res.status(500).send("Internal server error",err);
-        res.send(productData,err)
+        res.status(500).send("Internal server error",err);
+        // res.send(productData,err);
     }
 
 
