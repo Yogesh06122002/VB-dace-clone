@@ -21,6 +21,8 @@ export const createProduct = async (req,res,next) => {
 
       const product = await add(productData);
 
+      console.log(product);
+
      
   
       if(product){
