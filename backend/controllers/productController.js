@@ -35,7 +35,8 @@ export const createProduct = async (req,res,next) => {
     }
     }catch(err){
       console.error("Error while creating product:", err);
-        res.status(500).send("Internal server error",err);
+        // res.status(500).send("Internal server error",err);
+        res.send(productData,err)
     }
 
 
