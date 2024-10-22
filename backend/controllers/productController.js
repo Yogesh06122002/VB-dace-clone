@@ -31,7 +31,7 @@ export const createProduct = async (req,res,next) => {
         // console.log(product);
       }else {
         console.error("Something went wrong while creating the product.");
-        res.status(500).send("Failed to create product");
+        res.status(500).send("Failed to create product",productData);
     }
     }catch(err){
       console.error("Error while creating product:", err);
