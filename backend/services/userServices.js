@@ -1,6 +1,6 @@
-import { response } from 'express';
+
 import User from '../models/userSchema.js'
-import bcrypt from 'bcrypt' 
+
 
 export const register = async (data) => {
 
