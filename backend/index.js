@@ -27,12 +27,12 @@ mongoose.connect(process.env.MONGO_URI)
 
 const corsOptions = {
 
-  origin : [process.env.APPLICATION_URL,'https://vb-dace-clint.vercel.app', 'https://vb-dace-server.vercel.app'],
+  origin : [process.env.APPLICATION_URL,'http://localhost:5173','https://vb-dace-clint.vercel.app', 'https://vb-dace-server.vercel.app'],
   methods : ['GET','POST','PUT','DELETE'],
   credentials: true
 } 
 app.use(cors(corsOptions));
-// app.options('*', cors(corsOptions)); // This will allow preflight requests for all routes
+app.options('*', cors(corsOptions)); // This will allow preflight requests for all routes
 app.use(express.json());
 
 

@@ -29,8 +29,10 @@ function Register() {
     console.log(formData);
     try{
 
-      await axios.post('http://localhost:5005/api/user/register',formData);
-     console.log("product created successfully")
+      await axios.post('https://vb-dace-server.vercel.app/api/user/register',formData)
+      .then(response => console.log(response.data))
+      .catch(error => console.error('Network Error', error));
+     console.log("Account created successfully")
       setFormData({
         userName :'',
       userPhno:'',
