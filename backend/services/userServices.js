@@ -18,9 +18,15 @@ export const register = async (data) => {
 export const login = async (data) => {
   const existUser = await User.findOne({userEmail : data.userEmail});
   if(existUser){
-   return existUser;
+    if(data.userPassword === existUser.userPassword){
+
+      return existUser;
+    }
+    else{
+      return {error:"invalid password"}
+    }
     
   
   }
-  return null;
+  return {error:"user not found"};
 }

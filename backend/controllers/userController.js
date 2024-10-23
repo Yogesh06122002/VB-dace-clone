@@ -27,11 +27,14 @@ export const userLogin = async (req,res,next) => {
   // console.log(user);
   try{
     const user = await login(data);
-    if(user){
-      res.send(user);
-      // console.log("user login successfull")
-    }else{
-      console.log("user login failed")
+    if(user && !user.error){
+      
+      res.status(200).json({message:"login successful"})
+    }else if (user & user.error) {
+      res.status(401).json({message:"user.error"})
+    }
+    else{
+      res.status(404).json({message:"user not found"})
     }
   }catch(err){
     console.log("something went wrong",err)

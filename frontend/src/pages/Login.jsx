@@ -26,13 +26,20 @@ function Login() {
     console.log(formData);
     try{
 
-      await axios.get('http://localhost:5005/api/user/login',formData)
-      .then(response => console.log(response.data))
+      await axios.post('https://vb-dace-server.vercel.app/api/user/login',formData)
+      .then(response =>{
+
+        console.log(response.data);
+        console.log("Login Successful");
+        navigate('/');
+
+      })
       .catch(error => console.error('Network Error', error));
-      console.log("login successfully");
-      navigate('/');
+      
+      
     }catch(err){
       console.log("something went wrong",err);
+
     }
   }
   return (
