@@ -7,12 +7,12 @@ export const userRegister = async (req,res,next) => {
   try{
 
     if(user){
-      res.send(user);
+      res.status(201).json({message:"User Registered successfully"});
     }else{
       console.log("user registration failed")
     }
   }catch(err){
-    if( err === "Email already exist"){
+    if( err.message === "Email already exist"){
       res.status(400).send({ message: 'Email already exists' });
     }else{
 
