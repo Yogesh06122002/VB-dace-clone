@@ -53,9 +53,9 @@ function Productid() {
     }
   
     // Ensure product and images exist before accessing them
-    // if (!product || !product.images || product.images.length === 0) {
-    //   return <div>No product details available.</div>;
-    // }
+    if (!product || !product.images || product.images.length === 0) {
+      return <div>No product details available.</div>;
+    }
   
   return (
     <div className='pt-8 lg:pt-16 lg:mx-12 mx-4'>
