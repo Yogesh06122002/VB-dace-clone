@@ -24,7 +24,7 @@ function Productid() {
   useEffect(() => {
 
     window.scrollTo(0, 0);
-   axios.get(`http://localhost:5005/api/products/get/${productid}`).
+   axios.get(`https://vb-dace-server.vercel.app/api/products/get/${productid}`).
    then((response) => {
     // console.log(response.data);
     setProduct(response.data);
@@ -41,7 +41,7 @@ function Productid() {
     setTimeout(()=>{
       setShowSuccess(false);
 
-    },4000);
+    },2000);
     dispatch(addProduct({product, count}));
     
   }

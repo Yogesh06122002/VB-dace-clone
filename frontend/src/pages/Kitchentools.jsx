@@ -11,7 +11,7 @@ function Kitchentools() {
   const [tools, setTools] = useState();
 
   useEffect(() => {
-    axios.get("http://localhost:5005/api/products/get").then((response) => {
+    axios.get("https://vb-dace-server.vercel.app/api/products/get").then((response) => {
     // console.log(response.data);
       setAllProducts(response.data);
       // console.log(allProducts);
